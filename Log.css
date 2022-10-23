@@ -1,0 +1,175 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+/* Nav */
+nav img{
+    width: 54px;
+}
+nav ul li .nav-link{ 
+    font-family: 'Nunito Sans', sans-serif;
+    color: #11999E !important;
+}
+nav .navbar-brand{
+    padding-left: 10px;
+}
+nav .nav-item .btn{
+    background-color: #11999E !important;
+    border-color: #11999E !important;
+}
+nav .container-fluid{
+    background-color: transparent !important;
+}
+
+/* Main */
+main .container-fluid{
+    background: linear-gradient(white, #DCF8F8);
+    padding-bottom: 100px;
+}
+main .container {
+    background-color: white;
+    position: relative;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    border-radius: 24px;
+    box-shadow: 0px 0px 20px #B2C5C1;
+}
+main .container .kiri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 24px 0 0 24px;
+    background-color: #DCF8F8;
+    }
+main .container .kiri img{
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+main .container .kanan{
+    text-decoration: none;
+    padding-bottom: 30px;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+}
+main header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+main .container .kanan header img{
+    width: 64px;
+}
+header h3,h4,#Privacy,#Terms,#daftar{
+    font-weight: bold;
+    color: #11999E;
+    text-decoration: none;
+}
+.kanan form #login{
+    border-radius: 12px;
+    border-color: #8a8a8a;
+    font-weight: 900;
+    width: 100%;
+    background-color: #8a8a8a !important;
+}
+.kanan form #login:hover{
+    background-color: #11999E !important;
+    border-color: #11999E !important;
+    box-shadow: 2px 3px 5px rgb(39, 39, 39);
+}
+.kanan form #google{
+    border-radius: 12px;
+    color: #8a8a8a;
+    width: 100%;
+    background-color: transparent !important;
+    border-color: #11999E;;
+}
+.kanan form #google:hover{
+    color: white;
+    background-color:  #11999E !important;
+    box-shadow: 2px 3px 5px rgb(39, 39, 39);
+}
+.kanan form #facebook{
+    border-radius: 12px;
+    border-color: #11999E;
+    color: #8a8a8a;
+    width: 100%;
+    background-color: transparent !important;
+}
+.kanan form #facebook:hover{
+    color: white;
+    background-color:  #11999E !important;
+    box-shadow: 2px 3px 5px rgb(39, 39, 39);
+}
+.kanan form{
+    width: 100%;
+}
+#emailStatus{
+    color: red;
+}
+#passwordStatus{
+    color: red;
+}
+@media only screen and (max-width: 767px){
+    main .container .kiri{
+        display: none;
+        }
+    main .container .kanan{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .kanan header{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* Footer */
+footer .kiri img{
+    width: 75px;
+} 
+footer .kanan img{
+    width: 110px;
+}
+footer .container-fluid{
+    display: flex;
+    padding-top: 20px;
+    background-color: #40514E;
+    display: flex;
+}
+footer .kanan{
+    color: aliceblue;
+    width: 33%;
+}
+footer .kanan h5{
+    color: aliceblue;
+}
+footer .kiri{
+    color: aliceblue;
+    width: 33%;
+}
+footer .tengah{
+    color: aliceblue;
+    width: 33%;
+}
+footer .kiri h5{
+    padding-top: 10px;
+    color: #11999E;
+}
+footer .kiri .medsos{
+    color: aliceblue;
+} 
+footer .container-fluid{
+    padding-bottom: 10px;
+}
+footer h5{
+    font-weight: bold;
+}
