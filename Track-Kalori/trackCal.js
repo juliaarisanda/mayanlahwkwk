@@ -52,6 +52,7 @@ function getData(){
 	var tinggibadan = localStorage.getItem('tinggi');
 	var jeniskelamin = localStorage.getItem('kelamin');
 	var umur = localStorage.getItem('umur');
+	var kalori = localStorage.getItem('kalori');
 	var hitung = '';
 	if(jeniskelamin == 'Laki'){
 		hitung = (66.5 + (13.75 * beratbadan) + (5.003 * tinggibadan) - (6.75 * umur));
@@ -62,5 +63,7 @@ function getData(){
 		document.getElementById('hitung-cal').innerHTML = 'Data tidak DItemukan';
 	}
 	document.getElementById('hitung-cal').innerHTML = hitung;
+	document.getElementById('cal-terpenuhi').innerHTML = kalori;
+	
 }
 getData();
