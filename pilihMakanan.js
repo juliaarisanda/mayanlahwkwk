@@ -1,14 +1,15 @@
 let ViewMakanan = document.querySelector("#view-makanan")
 
+
 async function pilihMakan(id){
     ViewMakanan.innerHTML = ""
     let url = await fetch(`https://6354fd4ada523ceadcf7e8d1.mockapi.io/eats/${id}`);
     let result = await url.json()
 
     
-
+    
     ViewMakanan.innerHTML = 
-    `head>
+    `<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -104,7 +105,7 @@ async function pilihMakan(id){
                             <td>${result.fat}</td>
                             <td>${result.carbohydrate}</td>
                             <td>${result.protein}</td>
-                            <td>${result.calories}</td>
+                            <td id="kalori">${result.calories}</td>
                           </tr>
                         </tbody>
                       </table>
@@ -117,7 +118,7 @@ async function pilihMakan(id){
             </div>
 
             <div class="container section-bawah text-center">
-                <button type="button" class="btn-lg kalori-btn" > <a href="../Track-Kalori/trackCal.html"> Tracking Kalori </a></button>
+            <button type="button" class="btn-lg kalori-btn" > <a href="/Track-Kalori/trackCal.html"> Tracking Kalori </a></button>
                 <button type="button" class="btn-lg karbon-btn" > <a href="#"> Tracking Karbon </a></button>
             </div>
         </div>
@@ -157,4 +158,6 @@ async function pilihMakan(id){
         </div>
     </footer>
     </body>`
+    var kalori = result.calories;
+    localStorage.setItem('kalori', kalori);
 }
